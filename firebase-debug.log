@@ -1,0 +1,121 @@
+[debug] [2023-09-02T19:08:49.664Z] ----------------------------------------------------------------------
+[debug] [2023-09-02T19:08:49.665Z] Command:       /usr/local/bin/node /Users/pradyumn/.npm-global/bin/firebase init hosting
+[debug] [2023-09-02T19:08:49.665Z] CLI Version:   12.5.2
+[debug] [2023-09-02T19:08:49.665Z] Platform:      darwin
+[debug] [2023-09-02T19:08:49.666Z] Node Version:  v16.17.0
+[debug] [2023-09-02T19:08:49.666Z] Time:          Sun Sep 03 2023 00:38:49 GMT+0530 (India Standard Time)
+[debug] [2023-09-02T19:08:49.667Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-02T19:08:49.671Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-02T19:08:49.671Z] > authorizing via signed-in user (pradyumndaga28@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/pradyumn/Documents/Zoom/loader
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-09-02T19:09:17.806Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-09-02T19:09:17.807Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"root-loader","name":"loader"}
+[debug] [2023-09-02T19:09:20.150Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-09-02T19:09:20.150Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.8399196050005556814"}
+[debug] [2023-09-02T19:09:20.152Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8399196050005556814 [none]
+[debug] [2023-09-02T19:09:21.950Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8399196050005556814 200
+[debug] [2023-09-02T19:09:21.950Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8399196050005556814 {"name":"operations/cp.8399196050005556814"}
+[debug] [2023-09-02T19:09:22.452Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-09-02T19:09:22.454Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8399196050005556814 [none]
+[debug] [2023-09-02T19:09:24.258Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8399196050005556814 200
+[debug] [2023-09-02T19:09:24.258Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8399196050005556814 {"name":"operations/cp.8399196050005556814","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"875123679273","projectId":"root-loader","lifecycleState":"ACTIVE","name":"loader","createTime":"2023-09-02T19:09:22.076Z"}}
+[debug] [2023-09-02T19:09:24.260Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/root-loader:addFirebase [none]
+[debug] [2023-09-02T19:09:27.838Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/root-loader:addFirebase 200
+[debug] [2023-09-02T19:09:27.838Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/root-loader:addFirebase {"name":"operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk"}
+[debug] [2023-09-02T19:09:27.839Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk [none]
+[debug] [2023-09-02T19:09:28.820Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk 200
+[debug] [2023-09-02T19:09:28.820Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk {"name":"operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk"}
+[debug] [2023-09-02T19:09:29.322Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-09-02T19:09:29.323Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk [none]
+[debug] [2023-09-02T19:09:30.415Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk 200
+[debug] [2023-09-02T19:09:30.415Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk {"name":"operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk"}
+[debug] [2023-09-02T19:09:31.417Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-09-02T19:09:31.418Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk [none]
+[debug] [2023-09-02T19:09:32.682Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk 200
+[debug] [2023-09-02T19:09:32.682Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk {"name":"operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk"}
+[debug] [2023-09-02T19:09:34.684Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-09-02T19:09:34.685Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk [none]
+[debug] [2023-09-02T19:09:35.783Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk 200
+[debug] [2023-09-02T19:09:35.783Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk {"name":"operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk"}
+[debug] [2023-09-02T19:09:39.785Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-09-02T19:09:39.786Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk [none]
+[debug] [2023-09-02T19:09:40.825Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk 200
+[debug] [2023-09-02T19:09:40.825Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk {"name":"operations/workflows/YmVhZDU3NjYtM2YzYS00YWRjLTgwNWItMDZlNjcwNDg0ODJk","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"root-loader","projectNumber":"875123679273","displayName":"loader","name":"projects/root-loader","resources":{"hostingSite":"root-loader"}}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
+[info] 
+[info] Project information:
+[info]    - Project ID: root-loader
+[info]    - Project Name: loader
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/root-loader/overview
+[info] i  Using project root-loader (loader) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-09-02T19:10:37.145Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-09-02T19:10:37.413Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-09-02T19:10:37.413Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.3.1","browserURL":"https://www.gstatic.com/firebasejs/10.3.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.3.1/firebase.tgz"},"live":{"version":"10.3","browserURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.3.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.3.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.3.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.3.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.3.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.3.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.3.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.memory.js"}}
+[info] ✔  Wrote /Users/pradyumn/Documents/Zoom/loader/dist/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/pradyumn/Documents/Zoom/loader 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=992484697&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-09-02T19:10:37.985Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-09-02T19:10:37.986Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-09-02T19:10:38.351Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-09-02T19:10:38.351Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-09-02T19:10:38.357Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-09-02T19:10:38.782Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-09-02T19:10:38.782Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"pradyumndaga","id":29457947,"node_id":"MDQ6VXNlcjI5NDU3OTQ3","avatar_url":"https://avatars.githubusercontent.com/u/29457947?v=4","gravatar_id":"","url":"https://api.github.com/users/pradyumndaga","html_url":"https://github.com/pradyumndaga","followers_url":"https://api.github.com/users/pradyumndaga/followers","following_url":"https://api.github.com/users/pradyumndaga/following{/other_user}","gists_url":"https://api.github.com/users/pradyumndaga/gists{/gist_id}","starred_url":"https://api.github.com/users/pradyumndaga/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/pradyumndaga/subscriptions","organizations_url":"https://api.github.com/users/pradyumndaga/orgs","repos_url":"https://api.github.com/users/pradyumndaga/repos","events_url":"https://api.github.com/users/pradyumndaga/events{/privacy}","received_events_url":"https://api.github.com/users/pradyumndaga/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":0,"following":0,"created_at":"2017-06-15T13:16:49Z","updated_at":"2023-08-07T14:14:13Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":13634,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as pradyumndaga 
+[info] 
+[debug] [2023-09-02T19:11:02.275Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-09-02T19:11:02.604Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-09-02T19:11:02.604Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] ⚠  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-09-02T19:11:02.720Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-09-02T19:11:03.081Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-09-02T19:11:03.081Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] ⚠  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
